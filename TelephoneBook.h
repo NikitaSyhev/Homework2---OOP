@@ -3,8 +3,8 @@
 class TelephoneBook
 {
 public:
-
-	TelephoneBook(std::string& user, int homePhone, int mobilePhone, std::string& extra);
+	TelephoneBook();
+	TelephoneBook(const std::string& user, int homePhone, int mobilePhone, const std::string& extra);
 
 	std::string getUser();    //геттеры и сеттеры для user
 	void setUser(std::string& user);
@@ -35,3 +35,4 @@ private:
 
 };
 
+void add_abonent(TelephoneBook arr[], const int length);
